@@ -5,13 +5,13 @@ import { SafeAreaView, TouchableOpacity, View } from "react-native";
 import { COLORS, DRAWER_STYLE } from "@utils/constants";
 import { Liturgia } from "@screens/Liturgia";
 import { Santo } from "@screens/Santo";
-import { Oracoes } from "@screens/Oracoes";
+import { Tercos } from "@screens/Tercos";
 import { Text } from "@components/Text";
 
 type TStackList = {
   Liturgia: undefined;
   Santo: undefined;
-  Oracoes: undefined;
+  Tercos: undefined;
 }
 
 const Drawer = createDrawerNavigator<TStackList>()
@@ -28,6 +28,7 @@ export function Routes() {
     >
       <Drawer.Screen name="Liturgia" component={Liturgia} options={{
         drawerLabel: "Liturgia",
+        headerTitle: "Liturgia",
         drawerIcon: ({ focused, size }) => 
           <FontAwesome5 
             name="bible" 
@@ -36,7 +37,8 @@ export function Routes() {
           />
       }} />
       <Drawer.Screen name="Santo" component={Santo} options={{
-        drawerLabel: "Santo",
+        drawerLabel: "Santo do Dia",
+        headerTitle: "Santo do Dia",
         drawerIcon: ({ focused, size }) => 
           <FontAwesome5 
             name="cross" 
@@ -44,8 +46,9 @@ export function Routes() {
             color={focused ? COLORS.YELLOW : COLORS.BLACK}
           />
       }} />
-      <Drawer.Screen name="Oracoes" component={Oracoes} options={{
-        drawerLabel: "Orações",
+      <Drawer.Screen name="Tercos" component={Tercos} options={{
+        drawerLabel: "Terços",
+        headerTitle: "Terços",
         drawerIcon: ({ focused, size }) => 
           <FontAwesome5 
             name="praying-hands" 
