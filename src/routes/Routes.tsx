@@ -1,12 +1,11 @@
-import { DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons'; 
-import { SafeAreaView, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { COLORS, DRAWER_STYLE } from "@utils/constants";
 import { Liturgia } from "@screens/Liturgia";
 import { Santo } from "@screens/Santo";
 import { Tercos } from "@screens/Tercos";
-import { Text } from "@components/Text";
 
 type TStackList = {
   Liturgia: undefined;
