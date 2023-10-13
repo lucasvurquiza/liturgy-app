@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ISaint } from "@utils/typesAndInterfaces";
 import { Text } from "@components/Text";
 import { COLORS } from "@utils/constants";
+import { Container } from "./styles";
 
 type TSaint = {
   saintDay: ISaint
@@ -29,13 +30,7 @@ export function Saints(saintDay: TSaint) {
         }}>
           {saint.name}
         </Text>
-      <View 
-        style={{ 
-          backgroundColor: `${COLORS.YELLOW}25`, 
-          padding: 5, 
-          alignItems: 'center',
-          borderRadius: 5
-        }}> 
+      <Container> 
         <Text 
           weight={600} 
           color={COLORS.BLACK} 
@@ -75,7 +70,7 @@ export function Saints(saintDay: TSaint) {
                 Mostrar Menos
             </Text>
         </TouchableOpacity>}
-      </View>
+      </Container>
     </View>
   )
 }

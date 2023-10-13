@@ -36,3 +36,23 @@ export interface ISaint {
   summary: string;
   image?: string;
 }
+
+export interface IMisteryPrayer {
+  title: string;
+  prayer: string;
+  isTouch: boolean;
+}
+
+export interface IOneMistery {
+  numberOfMistery: string;
+  title: string;
+  body: string;
+  image: string;
+  prayers: IMisteryPrayer[];
+}
+
+export interface IMisteryDay {
+  titleMistery: string;
+  dayOfWeek: string;
+  misterys: IOneMistery[];
+}

@@ -79,6 +79,12 @@ const gloriaPai = {
   isTouch: true
 }
 
+const jaculatoria = {
+  title: "Jaculatória - Ó meu Jesus",
+  prayer: "Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o Céu e socorrei principalmente aquelas que mais precisarem de vossa misericórdia. Amém",
+  isTouch: true
+}
+
 export const introducaoRosario = [
   {
     title: "Sinal da Cruz",
@@ -103,4 +109,149 @@ export const introducaoRosario = [
   paiNosso,
   aveMaria,
   gloriaPai
+]
+
+export const misteriosRosario = [
+  {
+    titleMistery: "Gozosos",
+    dayOfWeek: "Segunda e Sábado",
+    misterys: [
+      {
+        numberOfMistery: "1º Mistério Gozoso",
+        title: "Anunciação",
+        body: `Contemplamos a anunciação do anjo Gabriel à Nossa Senhora e a encarnação do verbo de Deus em seu ventre. "Eis aqui a serva do Senhor, faça-se em mim segundo a vossa palavra" - aqui vemos em Maria o despojamento, a humildade, o amor a Deus e a entrega de si mesma.`,
+        image: "https://drive.google.com/uc?export=view&id=1JwGj7hzgU_K2KYfe3L2OMuhAYdZgilmj",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "2º Mistério Gozoso",
+        title: "Anuncio da Boa-Nova",
+        body: `Contemplamos a visitação de Nossa Senhora à Santa Isabel. "E partindo às pressas foi às montanhas ficar com sua prima que já de idade avançada estava grávida".... Isabel a saúda: Tu és bendita.. como posso merecer que a MÃE do meu Senhor venha me visitar, quando adentrastes pela porta a criança saltou em meu ventre. Maria responde: "Minha Alma glorifica o Senhor... Meu espírito exulta em Deus Meu Salvador!"`,
+        image: "https://drive.google.com/uc?export=view&id=16l5Y9ylcUSCLX4RGdKkM46JMOs3wnAyt",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "3º Mistério Gozoso",
+        title: "Jesus nasce em um gruta, em Belém",
+        body: "Contemplamos o nascimento de Nosso Senhor Jesus Cristo em Belém. Um Deus tão grande e poderoso vem até nós... o verbo de Deus se faz carne, sai da sua divindade e se torna um pobre mortal semelhante a nós em tudo, menos no pecado.",
+        image: "https://drive.google.com/uc?export=view&id=1weNRiRLflDIRQUqOaduJSw2gaxMPi7fM",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "4º Mistério Gozoso",
+        title: "Apresentação de Jesus ao Templo",
+        body: "Contemplamos a apresentação do Menino Jesus no Templo e a Purificação de Nossa Senhora. Uma espada de dor transpassará o vosso Coração.",
+        image: "https://drive.google.com/uc?export=view&id=1U617zX0lUmYyyMxzrCuIWCTGsOC9wUTE",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "5º Mistério Gozoso",
+        title: "A perda e o reencontro de Jesus",
+        body: "Contemplamos a perda e o reencontro de Jesus no templo de Jerusalém. Maria e José perderam Jesus ainda menino aos 12 anos em Jerusalém e após três dias de dor e sofrimento o encontram no templo no meio de doutores da lei ensinando a doutrina do Pai.",
+        image: "https://drive.google.com/uc?export=view&id=1XjBtA8_71JdcX08F8nm-A56VDqHkYXWo",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      }
+    ]
+  },
+  {
+    titleMistery: "Dolorosos",
+    dayOfWeek: "Terça e Sexta",
+    misterys: [
+      {
+        numberOfMistery: "1º Mistério Doloroso",
+        title: "A agonia de Jesus",
+        body: `Contemplamos a agonia Mortal de Nosso Senhor, quando suou sangue no Horto das Oliveiras. "Minha alma está triste a ponto de morrer, ficai aqui e vigiai. "Vigiai e orai para não cairdes em tentação, o espírito está pronto, mas a carne é fraca.".`,
+        image: "https://drive.google.com/uc?export=view&id=1kVByMTpTA-e61802DwFrYmr_lgGNDD_s",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "2º Mistério Doloroso",
+        title: "A flagelação de Jesus",
+        body: "Contemplamos a flagelação de Nosso Senhor. O sofrimento – a humilhação o escárnio- a violência de um inocente.",
+        image: "https://drive.google.com/uc?export=view&id=10WZI93NUZUo3-o6houNMglIb0d2akBQt",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "3º Mistério Doloroso",
+        title: "A coroação de espinhos",
+        body: "Contemplamos a coroação de espinhos de Nosso Senhor Jesus Cristo. Cada ponta de espinho... um pecado – em cada gota de sangue derramado o perdão.",
+        image: "https://drive.google.com/uc?export=view&id=1R2wYqRBTnS8L_K9G-_w8Fyi4QNf2aqX6",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "4º Mistério Doloroso",
+        title: "Jesus carrega a Cruz até o Calvário",
+        body: "Contemplamos a subida dolorosa de Jesus carregando a Cruz para o Calvário. O peso dos pecados do mundo nos ombros abriram chagas que chegavam até os ossos.",
+        image: "https://drive.google.com/uc?export=view&id=11jibZr-ghNKG0Q2P2OToclDJj9NCqK_Y",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "5º Mistério Doloroso",
+        title: "Jesus morre na cruz",
+        body: "Contemplamos a crucificação e morte de Nosso Senhor Jesus Cristo. Cruz, escândalo para os judeus, loucura para os gentios, consolo e sinal de fé para os cristãos.",
+        image: "https://drive.google.com/uc?export=view&id=1ImTLRWfh0XZ9JfuyuEUsbD4xKQs2XO2e",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      }
+    ]
+  },
+  // {
+  //   titleMistery: "Gloriosos",
+  //   dayOfWeek: "Quarta e Domingo",
+
+  // },
+  // {
+  //   titleMistery: "Luminosos",
+  //   dayOfWeek: "Quinta",
+
+  // },
 ]

@@ -1,8 +1,8 @@
-import { ActivityIndicator, SafeAreaView, ScrollView, View } from "react-native";
+import { SafeAreaView, ScrollView, View } from "react-native";
 import { useEffect, useState } from "react";
 import { ContainerColor, ContainerDate } from "./styles";
 import { ILiturgia } from "@utils/typesAndInterfaces";
-import { COLORS, COLORS_READING, SECOND_NOT_EXIST, TYPES_RENDER } from "@utils/constants";
+import { COLORS_READING, SECOND_NOT_EXIST, TYPES_RENDER } from "@utils/constants";
 import { getLiturgiaOfDay } from "@services/liturgia";
 import { Header } from "./components/Header";
 import { Text } from "@components/Text";
