@@ -21,7 +21,7 @@ export const DRAWER_STYLE: DrawerNavigationOptions = {
     backgroundColor: COLORS.BROWN,
     shadowColor: '#000',
     shadowOffset: { width: 1, height: 1 },
-    shadowOpacity:  0.4,
+    shadowOpacity: 0.4,
     shadowRadius: 3,
     elevation: 5,
   },
@@ -47,18 +47,18 @@ export type TYPES_RENDER = 'primeiraLeitura' | 'salmo' | 'segundaLeitura' | 'eva
 
 export const COLORS_READING = {
   Verde: '#008000',
-  Branco: '#716A6E', 
-  Vermelho: '#FF0000', 
-  Roxo: '#8B008B', 
+  Branco: '#716A6E',
+  Vermelho: '#FF0000',
+  Roxo: '#8B008B',
   Preto: '#0D0D0D',
   Rosa: '#FFC0CB'
 }
 
 export const TYPES_RENDER_LABEL = {
   primeiraLeitura: 'Primeira Leitura',
-  salmo: 'Responsório', 
-  segundaLeitura: 'Segunda Leitura', 
-  evangelho: 'Evangelho', 
+  salmo: 'Responsório',
+  segundaLeitura: 'Segunda Leitura',
+  evangelho: 'Evangelho',
 }
 
 const aveMaria = {

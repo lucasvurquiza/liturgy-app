@@ -2,7 +2,7 @@ import { FlatList, View } from "react-native";
 import { useEffect, useState } from "react";
 import { ContainerHeader } from "./styles";
 import { Saints } from "./components/Saints";
-import {decode} from 'html-entities';
+import { decode } from 'html-entities';
 import { ISaint } from "@utils/typesAndInterfaces";
 import { getSaintsOfDay, returnLinkToImage } from "@services/saintOfDay";
 import { Text } from "@components/Text";
@@ -28,10 +28,10 @@ export function Santo() {
     const saintsOfDay = await getSaintsOfDay(month, day)
     const saintsMapped = saintsOfDay?.map(item => ({
       name: item.name,
-      ...(item.isFavorite && {isFavorite: item.isFavorite}),
-      ...(item.text && {text: decode(item.text.replace(/<[^>]+>/g, ''))}),
+      ...(item.isFavorite && { isFavorite: item.isFavorite }),
+      ...(item.text && { text: decode(item.text.replace(/<[^>]+>/g, '')) }),
       summary: item.summary,
-      ...(item.image && {image: returnLinkToImage(item.image)}),
+      ...(item.image && { image: returnLinkToImage(item.image) }),
     }))
     setSaintsToDay(saintsMapped || null)
     setIsLoading(false);
@@ -40,23 +40,23 @@ export function Santo() {
   useEffect(() => {
     searchLiturgia()
   }, [])
-  
+
   return (
     <>
-      {isLoading 
-        ? <Loading /> 
+      {isLoading
+        ? <Loading />
         : <View>
-            <FlatList
-              data={saintsToDay}
-              contentContainerStyle={{ paddingHorizontal: 20 }}
-              renderItem={({item}) => <Saints saintDay={ item } key={item.name} />}
-              ListHeaderComponentStyle={{ marginBottom: 20 }}
-              ListHeaderComponent={<ContainerHeader>
+          <FlatList
+            data={saintsToDay}
+            contentContainerStyle={{ paddingHorizontal: 20 }}
+            renderItem={({ item }) => <Saints saintDay={item} key={item.name} />}
+            ListHeaderComponentStyle={{ marginBottom: 20 }}
+            ListHeaderComponent={<ContainerHeader>
               <Text size={70}>{formatDate(formattedToday)[0]}</Text>
               <Text size={40} weight={400}>{formatDate(formattedToday)[3].toString().slice(0, 3).toUpperCase()}</Text>
-              </ContainerHeader>}
-            />
-          </View>}
+            </ContainerHeader>}
+          />
+        </View>}
     </>
   )
 }

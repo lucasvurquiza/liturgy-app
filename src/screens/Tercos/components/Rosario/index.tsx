@@ -95,8 +95,8 @@ export function Rosario(props: IRosario) {
             {isLoadingImage && <ActivityIndicator style={{ marginTop: 20 }} size={'large'} color={COLORS.YELLOW} />}
             <Image
               source={{ uri: misterySelected[moreMistery].image }}
-              style={{ 
-                ...(!isLoadingImage && { width: 180, height: 250, marginTop: 20 }), 
+              style={{
+                ...(!isLoadingImage && { width: 180, height: 250, marginTop: 20 }),
                 borderRadius: 5,
               }}
               onLoadStart={() => setIsLoadingImage(true)}
@@ -106,11 +106,11 @@ export function Rosario(props: IRosario) {
               {misterySelected[moreMistery].body}
             </Text>
             <ContainerPrayers>
-              {misterySelected[moreMistery].prayers.map(prayer => <ListItem 
-              isBlack 
-              showQuantity 
-              item={prayer} 
-              onTapShowModal={onTapShowModal} />)}
+              {misterySelected[moreMistery].prayers.map(prayer => <ListItem
+                isBlack
+                showQuantity
+                item={prayer}
+                onTapShowModal={onTapShowModal} />)}
             </ContainerPrayers>
             <ContainerActionsButton>
               <TouchableOpacity onPress={onRemoveMoreMistery}>
@@ -121,7 +121,7 @@ export function Rosario(props: IRosario) {
               </TouchableOpacity>
             </ContainerActionsButton>
             <ModalPrayer visible={modalVisible} close={onTapCloseModal} item={prayerItemModal} />
-          </> :<>
+          </> : <>
             <Text size={18} weight={700} color={COLORS.BLACK}>{agradecimento.title}</Text>
             <Text size={15} style={{ textAlign: 'justify', marginBottom: 20 }}>
               {agradecimento.prayer}
