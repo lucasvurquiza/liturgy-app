@@ -10,7 +10,7 @@ export const Container = styled.View`
 `;
 
 export const Card = styled.View`
-  background-color: ${({ theme: { colors } }) => colors.WHITE}; 
+  background-color: ${({ theme: { colors } }) => colors.WHITE};
   align-items: center;
   justify-content: center;
   margin-horizontal: 20px;
@@ -18,6 +18,7 @@ export const Card = styled.View`
   border-radius: 5px;
   padding-vertical: 10px;
   gap: 10px;
+  height: 90%;
 `;
 
 export const Header = styled.View`
