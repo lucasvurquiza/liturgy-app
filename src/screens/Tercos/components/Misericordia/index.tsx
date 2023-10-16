@@ -44,37 +44,37 @@ export function Misericordia(props: IMisericordia) {
       showsVerticalScrollIndicator={false}>
 
       <View style={{ alignItems: 'center' }}>
-        <Text size={20} weight={700} color={COLORS.BLACK}>
+        <Text size={18} weight={700} color={COLORS.BLACK}>
           Terço a Divina Misericórdia
         </Text>
 
-        <Text size={18} style={{ textAlign: 'justify', marginVertical: 20 }}>
+        <Text size={15} style={{ textAlign: 'justify', marginVertical: 20 }}>
           Em nome do Pai, do Filho e do Espírito Santo. Amém
         </Text>
 
-        {tercoMisericordia.map(prayer => <ListItem isBlack item={prayer} onTapShowModal={onTapShowModal} />)}
+        {tercoMisericordia.map(prayer => <ListItem key={prayer.title} isBlack item={prayer} onTapShowModal={onTapShowModal} />)}
 
-        <Text size={20} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginVertical: 20 }}>
+        <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
           Nas contas grandes:
         </Text>
 
-        <Text size={18} style={{ textAlign: 'justify' }}>
+        <Text size={15} style={{ textAlign: 'justify' }}>
           {eternoPai}
         </Text>
 
-        <Text size={20} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginVertical: 20 }}>
+        <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
           No fim do terço:
         </Text>
 
-        <Text size={18} style={{ textAlign: 'justify' }}>
+        <Text size={15} style={{ textAlign: 'justify' }}>
           {dolorosaPaixao}
         </Text>
 
-        <Text size={20} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginVertical: 20 }}>
+        <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
           Oração conclusiva:
         </Text>
 
-        <Text size={18} style={{ textAlign: 'justify' }}>
+        <Text size={15} style={{ textAlign: 'justify', marginBottom: 20 }}>
           {oracaoConclusiva}
         </Text>
 

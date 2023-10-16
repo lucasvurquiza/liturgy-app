@@ -11,7 +11,7 @@ type TSaint = {
 
 export function Saints(saintDay: TSaint) {
   const { saintDay: saint } = saintDay;
-
+  console.log(saint.image)
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -45,14 +45,14 @@ export function Saints(saintDay: TSaint) {
               height: 150,
               marginTop: 20,
               borderRadius: 5,
-              marginBottom: 20,
             }}
           />}
         {(saint?.text && !showMore) && <TouchableOpacity style={{ marginBottom: 20 }} onPress={() => setShowMore(!showMore)}>
           <Text
             weight={800}
             color={COLORS.GRAY}
-            size={15}>
+            size={15}
+            style={{ marginTop: 20 }}>
             Mostrar Mais
           </Text>
         </TouchableOpacity>}
@@ -66,7 +66,8 @@ export function Saints(saintDay: TSaint) {
           <Text
             weight={800}
             color={COLORS.GRAY}
-            size={15}>
+            size={15}
+            style={{ marginTop: 20 }}>
             Mostrar Menos
           </Text>
         </TouchableOpacity>}
