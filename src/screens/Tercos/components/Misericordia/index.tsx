@@ -1,12 +1,18 @@
 import { Text } from "@components/Text";
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView, TouchableOpacity, View } from "react-native";
-import { ContainerActionsButton } from "../Rosario/styles";
-import { COLORS, dolorosaPaixao, eternoPai, oracaoConclusiva, tercoMisericordia } from "@utils/constants";
+import {
+  COLORS,
+  dolorosaPaixao,
+  eternoPai,
+  oracaoConclusiva,
+  tercoMisericordia
+} from "@utils/constants";
 import { ListItem } from "../Rosario/components/ListItem";
 import { useState } from "react";
 import { TModalPrayer } from "../Rosario";
 import { ModalPrayer } from "../Rosario/components/ModalPrayer";
+import { ContainerActionsButton } from "./styles";
 
 interface IMisericordia {
   goBack: () => void;
@@ -29,9 +35,15 @@ export function Misericordia(props: IMisericordia) {
     setPrayerItemModal(null)
   }
 
-  return (<ScrollView contentContainerStyle={{ padding: 20, alignItems: 'center' }} showsVerticalScrollIndicator={false}>
+  return (
+    <ScrollView
+      contentContainerStyle={{
+        padding: 20,
+        alignItems: 'center'
+      }}
+      showsVerticalScrollIndicator={false}>
 
-    <View style={{ alignItems: 'center' }}>
+      <View style={{ alignItems: 'center' }}>
         <Text size={20} weight={700} color={COLORS.BLACK}>
           Terço a Divina Misericórdia
         </Text>
@@ -65,17 +77,15 @@ export function Misericordia(props: IMisericordia) {
         <Text size={18} style={{ textAlign: 'justify' }}>
           {oracaoConclusiva}
         </Text>
-    
-    </View>
 
-    <ContainerActionsButton style={{ marginTop: 20 }}>
-      <TouchableOpacity onPress={goBack}>
-        <Ionicons name="arrow-back-circle-sharp" size={35} color={COLORS.BLACK} />
-      </TouchableOpacity>
-      <TouchableOpacity onPress={goBack}>
-        <Ionicons name="arrow-forward-circle-sharp" size={35} color={COLORS.BLACK} />
-      </TouchableOpacity>
-    </ContainerActionsButton>
-    <ModalPrayer visible={modalVisible} close={onTapCloseModal} item={prayerItemModal} />
-  </ScrollView>)
+      </View>
+
+      <ContainerActionsButton>
+        <TouchableOpacity onPress={goBack}>
+          <Ionicons name="close-circle-sharp" size={35} color={COLORS.BLACK} />
+        </TouchableOpacity>
+      </ContainerActionsButton>
+      <ModalPrayer visible={modalVisible} close={onTapCloseModal} item={prayerItemModal} />
+    </ScrollView>
+  )
 }

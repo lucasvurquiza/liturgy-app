@@ -25,10 +25,10 @@ export function ModalPrayer(props: IModal) {
       <Container>
         <Card>
           <ScrollView contentContainerStyle={{
-              alignItems: 'center',
-              justifyContent: 'center'
+            alignItems: 'center',
+            justifyContent: 'center'
           }}
-          showsVerticalScrollIndicator={false}>
+            showsVerticalScrollIndicator={false}>
             <Header>
               <Text size={25} weight={500} color={COLORS.BLACK}>{item?.title}</Text>
             </Header>

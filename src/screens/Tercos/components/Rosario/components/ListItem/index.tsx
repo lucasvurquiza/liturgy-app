@@ -23,14 +23,14 @@ export function ListItem(props: IItem) {
       style={{ alignItems: 'center' }}
       disabled={!item.isTouch}
       onPress={() => onTapShowModal(item)}>
-        <Text size={18} weight={700} color={isBlack ? COLORS.BLACK : COLORS.GRAY}>
-          {item.title === 'Ave-Maria' && showQuantity && '10 '}{item.title}{item.title === 'Ave-Maria' && showQuantity && 's'}{item.isTouch && '...'}
-        </Text>
-        {!item.isTouch && <Text 
-            size={15} 
-            style={{ textAlign: 'justify' }}>
-              {item.prayer}
-          </Text>}
+      <Text size={18} weight={700} color={isBlack ? COLORS.BLACK : COLORS.GRAY}>
+        {item.title === 'Ave-Maria' && showQuantity && '10 '}{item.title}{item.title === 'Ave-Maria' && showQuantity && 's'}{item.isTouch && '...'}
+      </Text>
+      {!item.isTouch && <Text
+        size={15}
+        style={{ textAlign: 'justify' }}>
+        {item.prayer}
+      </Text>}
     </TouchableOpacity>
   )
 }

@@ -14,8 +14,8 @@ export function ListMisterys(props: IList) {
 
   return (
     <Button onPress={() => selectMistery(item.misterys)}>
-      <Text 
-        color={COLORS.BLACK} 
+      <Text
+        color={COLORS.BLACK}
         size={20}>
         {item.titleMistery} ({item.dayOfWeek})
       </Text>
