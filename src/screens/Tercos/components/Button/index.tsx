@@ -1,5 +1,6 @@
 import { Text } from "@components/Text";
 import { Container } from "./styles";
+import { COLORS } from "@utils/constants";
 
 interface IButton {
   label: string;
@@ -11,7 +12,7 @@ export function Button(props: IButton) {
 
   return (
     <Container onPress={onSelect}>
-      <Text size={20} style={{ paddingHorizontal: 20 }}>
+      <Text size={20} color={COLORS.BLACK} style={{ paddingHorizontal: 20 }}>
         {label}
       </Text>
     </Container>

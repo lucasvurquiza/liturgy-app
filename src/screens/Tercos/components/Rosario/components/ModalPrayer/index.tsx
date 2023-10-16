@@ -26,7 +26,7 @@ export function ModalPrayer(props: IModal) {
         <Card>
           <ScrollView contentContainerStyle={{
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
           }}
             showsVerticalScrollIndicator={false}>
             <Header>
