@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { useState } from "react";
 import { Text } from "@components/Text";
 import { Rosario } from "./components/Rosario";
+import { Misericordia } from "./components/Misericordia";
 
 export function Tercos() {
   const [selectedTerco, setSelectedTerco] = useState<string | null>(null);
@@ -17,7 +18,10 @@ export function Tercos() {
           onSelect={() => setSelectedTerco("misericordia")} 
           label='Terço da Misericórdia' />
       </>
-      : <Rosario goBack={() => setSelectedTerco(null)} />}
+      : selectedTerco === 'rosario'
+        ? <Rosario goBack={() => setSelectedTerco(null)} /> 
+        : <Misericordia goBack={() => setSelectedTerco(null)} />
+      }
     </View>
   )
 }

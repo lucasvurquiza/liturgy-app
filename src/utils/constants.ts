@@ -85,6 +85,24 @@ const jaculatoria = {
   isTouch: true
 }
 
+export const agradecimento = {
+  title: "Agradecimento",
+  prayer: "Infinitas graças vos damos, ó Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos maternais. Dignai-vos, agora e para sempre tomar-nos debaixo do vosso poderoso amparo e para mais vos agradecer, vos saudamos com uma Salve Rainha...",
+  isTouch: false,
+}
+
+export const salveRainha = {
+  title: "Salve Rainha",
+  prayer: "Salve Rainha, Mãe de misericórdia, vida, doçura, esperança nossa, salve! A vós bradamos os degredados filhos de Eva, a vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, Advogada nossa, estes vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus. Bendito é o fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo. Amém",
+  isTouch: false,
+}
+
+export const creioEmDeus = {
+  title: "Creio em Deus Pai todo-poderoso",
+  prayer: "Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu na Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém",
+  isTouch: true
+}
+
 export const introducaoRosario = [
   {
     title: "Sinal da Cruz",
@@ -198,7 +216,7 @@ export const misteriosRosario = [
         numberOfMistery: "2º Mistério Doloroso",
         title: "A flagelação de Jesus",
         body: "Contemplamos a flagelação de Nosso Senhor. O sofrimento – a humilhação o escárnio- a violência de um inocente.",
-        image: "https://drive.google.com/uc?export=view&id=10WZI93NUZUo3-o6houNMglIb0d2akBQt",
+        image: "https://drive.google.com/uc?export=view&id=11jibZr-ghNKG0Q2P2OToclDJj9NCqK_Y",
         prayers: [
           paiNosso,
           aveMaria,
@@ -210,7 +228,7 @@ export const misteriosRosario = [
         numberOfMistery: "3º Mistério Doloroso",
         title: "A coroação de espinhos",
         body: "Contemplamos a coroação de espinhos de Nosso Senhor Jesus Cristo. Cada ponta de espinho... um pecado – em cada gota de sangue derramado o perdão.",
-        image: "https://drive.google.com/uc?export=view&id=1R2wYqRBTnS8L_K9G-_w8Fyi4QNf2aqX6",
+        image: "https://drive.google.com/uc?export=view&id=1ImTLRWfh0XZ9JfuyuEUsbD4xKQs2XO2e",
         prayers: [
           paiNosso,
           aveMaria,
@@ -222,7 +240,7 @@ export const misteriosRosario = [
         numberOfMistery: "4º Mistério Doloroso",
         title: "Jesus carrega a Cruz até o Calvário",
         body: "Contemplamos a subida dolorosa de Jesus carregando a Cruz para o Calvário. O peso dos pecados do mundo nos ombros abriram chagas que chegavam até os ossos.",
-        image: "https://drive.google.com/uc?export=view&id=11jibZr-ghNKG0Q2P2OToclDJj9NCqK_Y",
+        image: "https://drive.google.com/uc?export=view&id=10WZI93NUZUo3-o6houNMglIb0d2akBQt",
         prayers: [
           paiNosso,
           aveMaria,
@@ -234,7 +252,7 @@ export const misteriosRosario = [
         numberOfMistery: "5º Mistério Doloroso",
         title: "Jesus morre na cruz",
         body: "Contemplamos a crucificação e morte de Nosso Senhor Jesus Cristo. Cruz, escândalo para os judeus, loucura para os gentios, consolo e sinal de fé para os cristãos.",
-        image: "https://drive.google.com/uc?export=view&id=1ImTLRWfh0XZ9JfuyuEUsbD4xKQs2XO2e",
+        image: "https://drive.google.com/uc?export=view&id=1R2wYqRBTnS8L_K9G-_w8Fyi4QNf2aqX6",
         prayers: [
           paiNosso,
           aveMaria,
@@ -244,14 +262,150 @@ export const misteriosRosario = [
       }
     ]
   },
-  // {
-  //   titleMistery: "Gloriosos",
-  //   dayOfWeek: "Quarta e Domingo",
-
-  // },
-  // {
-  //   titleMistery: "Luminosos",
-  //   dayOfWeek: "Quinta",
-
-  // },
+  {
+    titleMistery: "Gloriosos",
+    dayOfWeek: "Quarta e Domingo",
+    misterys: [
+      {
+        numberOfMistery: "1º Mistério Glorioso",
+        title: "A ressureição de Jesus",
+        body: `Contemplamos a ressurreição de Jesus. A morte não é o fim para aqueles que crêem em Jesus. A vitória sobre a morte, a esperança na vida eterna, o envio a anunciar a boa-nova, a remissão dos pecados. A paz de Jesus àqueles que O seguem.`,
+        image: "https://drive.google.com/uc?export=view&id=1yZKj-uRs6U6dAy_x_Yvz7eZXpjsTX_jW",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "2º Mistério Glorioso",
+        title: "A ascenção do Senhor",
+        body: "Contemplamos a ascensão de Nosso Senhor Jesus Cristo ao Céu. A volta ao Pai para preparar–nos um lugar e para cuidar de cada um de nós intercedendo junto a Deus pelo perdão de nossos pecados.",
+        image: "https://drive.google.com/uc?export=view&id=162JsBGvUJAUrmsQ5AJMkClDAl5sQmfBV",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "3º Mistério Glorioso",
+        title: "A descida do Espírito Santo sobre os Apóstolos",
+        body: "Contemplamos a vinda do Espírito Santo sobre os apóstolos reunidos com a Virgem Maria em Jerusalém. A vinda do Prometido, o Espírito Santo Paráclito: o advogado-defensor.",
+        image: "https://drive.google.com/uc?export=view&id=1636GAzZyzwRK7ndKQsutgNB1dnncnlv2",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "4º Mistério Glorioso",
+        title: "A assunção de Maria ao céu",
+        body: "Contemplamos a assunção de Nossa Senhora ao Céu: o encontro da Mãe com o Filho no céu. Concebida sem pecado Virgem Santa merecedora de todas as graças.",
+        image: "https://drive.google.com/uc?export=view&id=1MDOWsAkB8b8pVHKBA8EZqRLlhlGtyiHP",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "5º Mistério Glorioso",
+        title: "A coroação de Maria por Jesus e os anjos",
+        body: "Contemplamos a coroação de Nossa Senhora como Rainha de todos os anjos e santos.",
+        image: "https://drive.google.com/uc?export=view&id=14FrzO4uxt2yPqy0kyuIg8kR6Jm3Beg15",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      }
+    ]
+  },
+  {
+    titleMistery: "Luminosos",
+    dayOfWeek: "Quinta",
+    misterys: [
+      {
+        numberOfMistery: "1º Mistério Luminoso",
+        title: "O Batismo de Jesus",
+        body: `Contemplamos o Batismo de Jesus Cristo no rio Jordão. Com atitude humilde ele nos mostra o caminho inicial da Salvação: a aceitação de Deus como nosso único Senhor.`,
+        image: "https://drive.google.com/uc?export=view&id=17G72BQJ3b24xLpKe140e8taIkshjI7hz",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "2º Mistério Luminoso",
+        title: "A auto-revelação de Jesus nas Bodas de Caná",
+        body: "Contemplamos sua auto-revelação nas bodas de Caná, quando transformou água em vinho. Atendendo o pedido de Maria, Jesus inicia seu caminho em direção à Salvação dos Homens fazendo seu primeiro milagre.",
+        image: "https://drive.google.com/uc?export=view&id=1dRPLqV82GPv7PJvNdb7BhOCvygkPCDxf",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "3º Mistério Luminoso",
+        title: "O anúncio do reino de Deus",
+        body: "Contemplamos o anúncio do Reino de Deus com o convite à conversão. Jesus nos convida a nos convertermos plenamente às leis de Deus em busca da felicidade eterna. O anúncio da Boa-Nova traz a esperança de um mundo melhor para todos os homens.",
+        image: "https://drive.google.com/uc?export=view&id=16x1HTa2U3D8SX_P6xhfaW2P9OhcmQpmY",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "4º Mistério Luminoso",
+        title: "A transfiguração",
+        body: "Contemplamos a transfiguração de Nosso Senhor Jesus Cristo. Assim Ele mostra aos Apóstolos e a todos os seres humanos a Sua verdadeira essência divina. Sua Luz nos orienta a seguir os caminhos do bem.",
+        image: "https://drive.google.com/uc?export=view&id=1a9LUuh2dYhmq5WTLrZ_4R9WGZWQ-y5JU",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      },
+      {
+        numberOfMistery: "5º Mistério Luminoso",
+        title: "A instituição da Eucaristia",
+        body: "Contemplamos a instituição da Eucaristia. Jesus nos dá seu próprio corpo e sangue como alimento espiritual para nossas almas. É a entrega total e a maior prova de Seu Amor por toda a humanidade. Mesmo sabendo que ia ser traído e entregue ao sacrifício Ele nos deu uma mostra suprema de Sua divindade.",
+        image: "https://drive.google.com/uc?export=view&id=1OUPg20EWhHgtZcTZ3E-7t9BVXm9-ySP4",
+        prayers: [
+          paiNosso,
+          aveMaria,
+          gloriaPai,
+          jaculatoria
+        ]
+      }
+    ]
+  },
 ]
+
+export const tercoMisericordia = [
+  paiNosso,
+  aveMaria,
+  creioEmDeus
+]
+
+export const eternoPai = 'Eterno Pai, eu Vos ofereço o Corpo e Sangue, a Alma e Divindade de Vosso diletíssimo Filho, Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e do mundo inteiro.'
+
+export const dolorosaPaixao = 'Pela Sua dolorosa Paixão, tende misericórdia de nós e do mundo inteiro.'
+
+export const santoDeus = 'Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro.'
+
+export const oracaoConclusiva = 'Deus, Pai Misericordioso, que revelou Teu amor em Teu Filho Jesus Cristo, e o derramou sobre nós no Espírito Santo, confiamos-Te hoje o destino do mundo e de cada homem. Dobre-se sobre nós pecadores, cure nossa fraqueza, vença todo o mal, deixe que todos os habitantes da Terra experimentem a Tua misericórdia, para que em Ti, o Deus Trino, possam sempre encontrar a fonte da esperança. Pai Eterno, pela dolorosa Paixão e Ressurreição de Teu Filho, tende piedade de nós e do mundo inteiro. Amém'
