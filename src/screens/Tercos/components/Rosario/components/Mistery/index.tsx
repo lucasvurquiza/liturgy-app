@@ -88,7 +88,7 @@ export function Mistery(props: IMistery) {
             <Ionicons name="arrow-back-circle-sharp" size={35} color={COLORS.BLACK} />
           </TouchableOpacity>
           <TouchableOpacity onPress={onEndRosario}>
-            <Ionicons name="arrow-forward-circle-sharp" size={35} color={COLORS.BLACK} />
+            <Ionicons name="close-circle-sharp" size={35} color={COLORS.BLACK} />
           </TouchableOpacity>
         </ContainerActionsButton>
       </>

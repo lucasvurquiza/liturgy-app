@@ -22,7 +22,7 @@ export function Introduction(props: IIntroduction) {
       renderItem={({ item }) => <ListItem isBlack item={item} onTapShowModal={onTapShowModal} />}
       ListFooterComponent={<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <TouchableOpacity onPress={goBack}>
-          <Ionicons name="arrow-back-circle-sharp" size={35} color={COLORS.BLACK} />
+          <Ionicons name="close-circle-sharp" size={35} color={COLORS.BLACK} />
         </TouchableOpacity>
         <ButtonMisterys onPress={() => setMisteryPressed(true)}>
           <Text size={15} weight={500} color={COLORS.BLACK}>Mistérios do dia</Text>
