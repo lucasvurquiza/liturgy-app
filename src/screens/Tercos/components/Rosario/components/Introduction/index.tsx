@@ -19,7 +19,7 @@ export function Introduction(props: IIntroduction) {
     <FlatList
       data={introducaoRosario}
       contentContainerStyle={{ padding: 20, gap: 20 }}
-      renderItem={({ item }) => <ListItem isBlack item={item} onTapShowModal={onTapShowModal} />}
+      renderItem={({ item }) => <ListItem isBlack isThree item={item} onTapShowModal={onTapShowModal} />}
       ListFooterComponent={<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <TouchableOpacity onPress={goBack}>
           <Ionicons name="close-circle-sharp" size={35} color={COLORS.BLACK} />

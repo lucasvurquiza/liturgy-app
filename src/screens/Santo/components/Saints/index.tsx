@@ -11,7 +11,6 @@ type TSaint = {
 
 export function Saints(saintDay: TSaint) {
   const { saintDay: saint } = saintDay;
-  console.log(saint.image)
   const [showMore, setShowMore] = useState(false);
 
   return (
