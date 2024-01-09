@@ -63,11 +63,22 @@ export function Misericordia(props: IMisericordia) {
         </Text>
 
         <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
-          No fim do terço:
+          Nas contas pequenas:
         </Text>
 
         <Text size={15} style={{ textAlign: 'justify' }}>
           {dolorosaPaixao}
+        </Text>
+
+        <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
+          Ao fim de cada dezena:
+        </Text>
+
+        <Text size={15} style={{ textAlign: 'justify' }}>
+          <Text weight={700} color={COLORS.BLACK} size={15} style={{ textAlign: 'justify' }}>3x </Text>
+          Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro.
+          {'\n\n'}
+          Ó Sangue e Água que jorraste do coração de Jesus como fonte de misericórdia para nós, nós confiamos em vós.
         </Text>
 
         <Text size={18} weight={700} color={COLORS.BLACK} style={{ textAlign: 'justify', marginTop: 20 }}>
